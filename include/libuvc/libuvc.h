@@ -538,8 +538,14 @@ void uvc_free_device_list(uvc_device_t **list, uint8_t unref_devices);
 uvc_error_t uvc_get_device_descriptor(
     uvc_device_t *dev,
     uvc_device_descriptor_t **desc);
+uvc_error_t uvc_get_device_descriptor2(
+        uvc_device_handle_t *devh,
+        uvc_device_descriptor_t **desc);
 void uvc_free_device_descriptor(
     uvc_device_descriptor_t *desc);
+
+
+
 
 uint8_t uvc_get_bus_number(uvc_device_t *dev);
 uint8_t uvc_get_device_address(uvc_device_t *dev);
